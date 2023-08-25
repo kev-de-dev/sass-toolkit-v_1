@@ -1,0 +1,18 @@
+header {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 300px;
+  margin: 6%;
+  border-radius: 25px;
+  .title {
+    font-size: 3rem;
+
+    box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px; /* Ajoutez un espacement intérieur */
+  }
+}

@@ -1,0 +1,333 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin-left: 12px;
+  padding: 15px;
+  border-radius: 28px;
+  background-color: rgba(250, 235, 215, 0.034);
+  box-shadow: 0 0 0 1.2px rgba(182, 172, 41, 0.123) inset;
+  text-transform: uppercase;
+}
+
+/* Variables de font */
+/* Variables de taille de police */
+:root {
+  --font-size-h1: 68px;
+  --font-size-h2-3: 48px;
+  --font-size-h4: 36px;
+  --font-size-body: 32px;
+  --font-size-main-h1: 56px;
+  --font-size-aside: 34px;
+  --font-size-footer-h1: 36px;
+  --font-size-menu-h3: 32px;
+}
+
+/* Font-family */
+body {
+  font-family: "roboto";
+}
+
+h1 {
+  font-family: "Shrikhand";
+}
+
+/* Font-size */
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 400;
+}
+
+h2,
+h3 {
+  font-size: var(--font-size-h2-3);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  font-weight: 700;
+}
+
+/* Header bloc-text P */
+header p {
+  font-size: var(--font-size-h4);
+  font-weight: 300;
+}
+
+.carte-text p {
+  font-size: var(--font-size-aside);
+  font-weight: 300;
+}
+
+.btn_menu p {
+  font-size: 15px;
+  color: #423f3f;
+  font-weight: 300;
+}
+
+/* Main */
+main,
+nav,
+.input,
+p {
+  font-size: var(--font-size-body);
+  font-weight: 500;
+}
+
+.main h1 {
+  font-size: var(--font-size-main-h1);
+}
+
+main .menu-principal h1 {
+  font-size: var(--font-size-h2-3);
+}
+
+/* Footer */
+footer h1 {
+  font-size: var(--font-size-footer-h1);
+}
+
+/* Pages */
+menu h3 {
+  font-size: var(--font-size-menu-h3);
+  font-weight: 300;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  margin: 6%;
+  border-radius: 25px;
+}
+header .title {
+  font-size: 3rem;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px; /* Ajoutez un espacement intérieur */
+}
+
+/* Couleurs principales */
+:root {
+  --green-font: #008766;
+  --green: #99e2d0;
+  --black-light: #353535;
+  --grey-light: #d2d2d2;
+  --grey-light-bg: #f6f6f6;
+  --white: #ffffff;
+  --primary: #9356dc;
+  --secondary: #ff79da;
+}
+
+/* Utilisation des variables */
+/* Header */
+header {
+  background: var(--grey-light-bg);
+}
+
+main .menu-principal {
+  background: var(--grey-light-bg);
+}
+
+.title {
+  background-color: var(--white);
+}
+
+/* Nav */
+.navbar {
+  background-color: var(--white);
+}
+
+.localisation,
+.input,
+nav {
+  width: 100%;
+  background: var(--grey-light);
+}
+
+/* Footer */
+footer {
+  background: var(--black-light);
+}
+
+/* Font Awesome */
+span,
+.fa-arrow-left {
+  color: var(--black-light);
+}
+
+.fa-store,
+.fa-list-ul,
+.fa-mobile-screen-button {
+  color: var(--grey-light);
+}
+.fa-store:hover,
+.fa-list-ul:hover,
+.fa-mobile-screen-button:hover {
+  color: var(--primary);
+}
+
+.fa-location-dot {
+  color: var(--black-light);
+}
+
+/* Animation colors */
+.radientBg,
+.button {
+  background: linear-gradient(var(--secondary) 0%, var(--primary) 80%);
+}
+
+.radientBg p {
+  color: var(--white);
+}
+
+.circle {
+  color: var(--white);
+  background: var(--primary);
+}
+
+.badge {
+  color: var(--green-font);
+  background: var(--green);
+}
+
+/* pages - restaurants */
+.btn_menu .btn_menu_check {
+  color: var(--green);
+  background: var(--green);
+}
+
+/* Styles pour les titres */
+.subtitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: rgb(128, 73, 5);
+}
+
+/* Styles pour les titres */
+.title {
+  font-size: 3rem;
+  background-color: rgba(17, 17, 16, 0.11);
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px; /* Ajoutez un espacement intérieur */
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: rgb(128, 73, 5);
+}
+
+.paragraph {
+  font-size: 26px;
+  font-weight: 400;
+  color: rgb(128, 73, 5);
+}
+
+/* Styles pour le contenu principal */
+.content {
+  margin-left: 20px;
+  /* Ajoutez un espacement vertical pour une meilleure lisibilité */
+  margin-bottom: 10px;
+}
+
+/* Styles pour le corps de la page */
+body {
+  width: 100%;
+}
+
+/* Styles pour la console précode */
+pre {
+  background-color: #222;
+  color: #fff;
+  padding: 15px;
+  font-family: "Courier New", monospace;
+  font-size: 25px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  border-radius: 18px;
+}
+
+code {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Styles pour la ligne de commande */
+pre code::before {
+  content: "$ "; /* Symbole de la ligne de commande */
+  color: #6bf;
+}
+
+/* Styles pour la commande "npm install -g sass" */
+pre code span.command {
+  color: #0f0;
+}
+
+/* Styles pour les options de la commande */
+pre code span.option {
+  color: #ff0;
+}
+
+/* Styles pour les arguments de la commande */
+pre code span.argument {
+  color: #fff;
+}
+
+/* Styles pour les commentaires de la commande */
+pre code span.comment {
+  color: #999;
+}
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 8%;
+}
+.main .fonctionnement {
+  background-color: antiquewhite;
+}
+
+.main__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 6%;
+  -moz-column-gap: 25px;
+  column-gap: 25px;
+  margin-bottom: 30px;
+}
+
+.main__item ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 15px;
+}
+
+.main__item li {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 4px 15px 3px rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=style.css.map */

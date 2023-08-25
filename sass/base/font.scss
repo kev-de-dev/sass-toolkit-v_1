@@ -1,0 +1,81 @@
+/* Variables de font */
+/* Variables de taille de police */
+:root {
+  --font-size-h1: 68px;
+  --font-size-h2-3: 48px;
+  --font-size-h4: 36px;
+  --font-size-body: 32px;
+  --font-size-main-h1: 56px;
+  --font-size-aside: 34px;
+  --font-size-footer-h1: 36px;
+  --font-size-menu-h3: 32px;
+}
+/* Font-family */
+body {
+  font-family: "roboto";
+}
+
+h1 {
+  font-family: "Shrikhand";
+}
+
+/* Font-size */
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 400;
+}
+
+h2,
+h3 {
+  font-size: var(--font-size-h2-3);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  font-weight: 700;
+}
+
+/* Header bloc-text P */
+header p {
+  font-size: var(--font-size-h4);
+  font-weight: 300;
+}
+.carte-text p {
+  font-size: var(--font-size-aside);
+  font-weight: 300;
+}
+.btn_menu p {
+  font-size: 15px;
+  color: #423f3f;
+  font-weight: 300;
+}
+
+/* Main */
+main,
+nav,
+.input,
+p {
+  font-size: var(--font-size-body);
+  font-weight: 500;
+}
+
+.main h1 {
+  font-size: var(--font-size-main-h1);
+}
+main .menu-principal h1 {
+  font-size: var(--font-size-h2-3);
+}
+
+
+/* Footer */
+footer h1 {
+  font-size: var(--font-size-footer-h1);
+}
+
+/* Pages */
+menu h3 {
+  font-size: var(--font-size-menu-h3);
+  font-weight: 300;
+  
+}

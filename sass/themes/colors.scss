@@ -1,0 +1,96 @@
+/* Couleurs principales */
+:root {
+  --green-font: #008766;
+  --green: #99e2d0;
+  --black-light: #353535;
+  --grey-light: #d2d2d2;
+  --grey-light-bg: #f6f6f6;
+  --white: #ffffff;
+  --primary: #9356dc;
+  --secondary: #ff79da;
+}
+
+
+
+
+
+/* Utilisation des variables */
+
+/* Header */
+header {
+  background: var(--grey-light-bg);
+}
+main {
+  .menu-principal
+  {
+    background: var(--grey-light-bg);
+  }
+}
+
+.title {
+  background-color: var(--white);
+}
+
+/* Nav */
+.navbar {
+  background-color: var(--white);
+}
+
+.localisation,
+.input,
+nav {
+  width: 100%;
+  background: var(--grey-light);
+}
+
+/* Footer */
+footer {
+  background: var(--black-light);
+}
+
+/* Font Awesome */
+span,
+.fa-arrow-left {
+  color: var(--black-light);
+}
+.fa-store,
+.fa-list-ul,
+.fa-mobile-screen-button {
+  color: var(--grey-light);
+  &:hover {
+    color: var(--primary); 
+  }
+}
+
+
+.fa-location-dot {
+  color: var(--black-light);
+}
+
+/* Animation colors */
+.radientBg,
+.button {
+  background: linear-gradient(var(--secondary) 0%, var(--primary) 80%);
+}
+
+.radientBg p {
+  color: var(--white);
+}
+
+.circle {
+  color: var(--white);
+  background: var(--primary);
+}
+
+.badge {
+  color: var(--green-font);
+  background: var(--green);
+}
+
+/* pages - restaurants */ 
+.btn_menu .btn_menu_check {
+
+  color:  var(--green);
+  background: var(--green);
+  
+}

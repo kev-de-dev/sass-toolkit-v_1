@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="title">
+      <h1>Sass ToolKit</h1>
+      <h4>guide d'installation</h4>
+    </header>
+    <main>
+      <section class="fonctionnement">
+        <h2>Étape 1 : Installation de Node.js et Sass</h2>
+        <p>Pour commencer, assurez-vous que vous avez Node.js installé sur votre machine. Ouvrez un terminal ou un invite de commande et vérifiez la version de Node.js en tapant :</p>
+
+        <pre><code>node -v</code></pre>
+
+        <p>Ensuite, installez Sass en tapant :</p>
+
+        <pre><code><span class="command">npm</span> <span class="option">install</span> -g <span class="argument">sass</span></code></pre>
+
+
+        <p>Vérifiez que Sass est bien installé en tapant :</p>
+
+        <pre><code>sass --version</code></pre>
+      </section>
+    
+      <section class="fonctionnement">
+        <h2>Étape 2 : Création de la structure du projet</h2>
+        <p>Créez un dossier nommé "sass" à la racine de votre projet. Dans ce dossier, ajoutez un fichier nommé "main.scss" pour écrire vos styles Sass. Créez également un fichier "index.html" à la racine du projet pour créer la page web. Vous pouvez ajouter un fichier "styles.css" dans un dossier "public" pour stocker le CSS compilé.</p>
+      </section>
+    
+      <section class="fonctionnement">
+        <h2>Étape 3 : Configuration de l'environnement de développement</h2>
+        <p>Ouvrez Visual Studio Code et installez l'extension "Live Sass Compiler". Cette extension vous permettra de compiler automatiquement vos fichiers Sass en CSS.</p>
+
+        <ol>
+          <li>
+            <p>Ouvrez le dossier "sass" dans Visual Studio Code.</p>
+          </li>
+          <li>
+            <p>Ouvrez un terminal dans Visual Studio Code.</p>
+          </li>
+          <li>
+            <p>Initialisez un fichier "package.json" pour gérer les dépendances du projet en tapant :</p>
+            <pre><code>npm init</code></pre>
+            <p>Remplissez les informations nécessaires ou appuyez simplement sur "Entrée" pour utiliser les valeurs par défaut.</p>
+          </li>
+          <li>
+            <p>Installez Sass en tant que dépendance de développement en tapant :</p>
+            <pre><code>npm install sass --save-dev</code></pre>
+          </li>
+          <li>
+            <p>Modifiez le fichier "package.json" pour ajouter un script "watch:sass" :</p>
+            <pre><code>"scripts": {
+  "watch:sass": "sass --watch sass/main.scss public/styles.css"
+}</code></pre>
+            <p>Ce script permettra de surveiller les changements dans le fichier "main.scss" et de compiler automatiquement en CSS dans le fichier "styles.css".</p>
+          </li>
+          <li>
+            <p>Pour lancer la compilation de Sass, utilisez la commande :</p>
+            <pre><code>npm run watch:sass</code></pre>
+            <p>Vous verrez les messages de compilation dans le terminal chaque fois que vous enregistrerez des modifications dans vos fichiers Sass. Votre fichier CSS compilé sera automatiquement mis à jour.</p>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+  </body>
+</html>

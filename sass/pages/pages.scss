@@ -1,0 +1,140 @@
+
+
+main {
+  .menu_title {
+   
+    margin-left: 15px;
+  }
+  
+  .menu-principal
+  {
+    z-index: 1;
+
+    margin-top: -59px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 30px 30px 0px 0px;
+
+  }
+}
+
+.titre_choix_menu {
+  display: flex;
+  align-items: flex-start;
+  width: 5%;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #99e2d0;
+  text-transform: uppercase;
+}
+
+.titre_choix_menu:hover {
+  width: 90%;
+  
+}
+.menu_title,
+.btn_menu .btn_menu_check, 
+.btn_menu .fa-check,
+.btn_menu .fa .fa-solid  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.choix_menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  overflow: hidden; /* Masque tout contenu dépassant de la boîte des choix de menu */
+  /*   l'attribut  margin-right: -60px /et utiliser en combinasion avec la classe ".btn_menu .btn_menu_check " */
+}
+
+/* Animation keyframes nommée "effet" */
+@keyframes effet {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Déplace l'élément de 20px vers le bas */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Remet l'élément à sa position d'origine */
+  }
+}
+
+.btn_menu {
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 21px;
+  background-color: white;
+  cursor: pointer;
+  height: 73px;
+  transition: all 1s ease; /* Ajoute une transition de 1 seconde à tous les changements de style */
+  animation: effet 0.8s both; /* Animation "effet" pendant 0.8 seconde */
+
+
+}
+
+.btn_menu:nth-child(1) {
+  animation-delay: 200ms;
+}
+.btn_menu:nth-child(2) {
+  animation-delay: 400ms;
+}
+.btn_menu:nth-child(3) {
+  animation-delay: 600ms;
+}
+.btn_menu:nth-child(4) {
+  animation-delay: 800ms;
+}
+
+
+.btn_menu span {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  padding-bottom: 11px;
+  margin-left: auto;
+  margin-right: 20px;
+
+}
+
+.choix_menu p {
+  white-space: nowrap; /* Le texte reste sur une seule ligne */
+  overflow: hidden; /* Tout contenu dépassant sera masqué */
+  text-overflow: ellipsis; /* Le texte dépassant est remplacé par  (...) */
+}
+
+/* Classe pour le bouton de menu avec l'icône de coche cachée */
+.btn_menu .btn_menu_check {
+  width: 60px;
+  height: auto;
+  margin-right: -60px; /*  margin-right: -60px /et utiliser en combinasion avec la classe ".choix_menu " 
+  l'attribut  overflow: hidden; / Masque tout contenu dépassant de la boîte des choix de menu */
+  padding: 0;
+  border-radius: 0 14px 14px 0;
+  transition: margin-right 0.7s; /* Animation de transition pour le déplacement */
+}
+
+.btn_menu .fa-check,
+.btn_menu .fa .fa-solid {
+
+  background-color: var(--white);
+  border-radius: 50%;
+  -webkit-text-stroke-width: 1px; /* Contour autour du texte de l'icône */
+  width: 29px;
+  height: 29px;
+  color:  var(--green);
+}
+
+/* Lorsque le bouton de menu est survolé, l'icône de coche apparaît */
+.btn_menu:hover .btn_menu_check {
+  transition: all 1s ease;
+  margin-right: 0px;
+}
+
+/* //////////////////////////////////////////////////////////// */
